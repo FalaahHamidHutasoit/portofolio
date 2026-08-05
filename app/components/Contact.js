@@ -13,8 +13,8 @@ export default function Contact() {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Get In Touch</h2>
-          <p className="text-slate-600">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Hubungi Kami</h2>
+          <p className="text-slate-600">Punya rencana proyek atau sekadar ingin menyapa? Jangan ragu untuk menghubungi kami!</p>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mt-6"></div>
         </div>
 
@@ -72,8 +72,8 @@ export default function Contact() {
 
             {/* Social Links */}
             <div className="flex gap-4 pt-2">
-              <a href="#" className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all"><i className="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/falaah-hamid-hutasoit-b21b29323/" className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all"><i className="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/FalaahHamidHutasoit/portofolio" className="w-10 h-10 rounded-full bg-white border border-slate-200 shadow-sm flex items-center justify-center text-slate-600 hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all"><i className="fab fa-github"></i></a>
             </div>
           </motion.div>
 
@@ -89,11 +89,11 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">Your Name</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50/50" placeholder="John Doe" />
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50/50" placeholder="" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-2">Your Email</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50/50" placeholder="john@example.com" />
+                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50/50" placeholder="" />
                 </div>
               </div>
               <div>

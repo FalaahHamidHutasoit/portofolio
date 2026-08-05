@@ -33,7 +33,7 @@ export default function About() {
                 Passionate Backend Developer
               </h3>
               <p className="text-slate-600 leading-relaxed mb-8">
-                As a Management Informatics Student, my true passion lies entirely in the world of Backend Development. I focus on writing clean, efficient code, managing robust databases, and building strong system architectures. My goal is to build digital products that not only function flawlessly behind the scenes but also provide exceptional performance and security.
+                Sebagai mahasiswa Manajemen Informatika, saya memiliki minat yang kuat di bidang Backend Development. Saya senang membangun logika aplikasi yang terstruktur, mengelola database, dan mengembangkan sistem yang efisien serta aman. Bagi saya, backend bukan hanya tentang menulis kode, tetapi juga menciptakan fondasi yang kuat agar sebuah aplikasi dapat berjalan dengan baik dan memberikan pengalaman terbaik bagi penggunanya.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">

@@ -15,7 +15,7 @@ export default function Hero() {
               Backend Developer & Web Specialist
             </h2>
             <p className="text-slate-600 mb-8 max-w-lg leading-relaxed">
-              I am a passionate university student dedicated to building modern, scalable, and secure web applications. Specializing in crafting clean backend logic, managing robust databases, and bringing digital solutions to life.
+              Saya adalah mahasiswa Manajemen Informatika yang memiliki minat besar dalam pengembangan aplikasi web, khususnya di bidang backend. Saya senang membangun sistem yang modern, aman, dan mudah dikembangkan, dengan fokus pada pengelolaan database, logika aplikasi, serta performa sistem yang optimal.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" className="px-8 py-3.5 bg-blue-600 text-white font-medium rounded-xl shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">

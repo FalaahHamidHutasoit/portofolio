@@ -22,7 +22,7 @@ export default function Projects() {
       title: "Digital Invitation (Seikarsa)",
       bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
       techs: [
-        { name: "PHP", color: "bg-blue-100 text-blue-600" },
+        { name: "Laravel", color: "bg-blue-100 text-blue-600" },
         { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
       ],
