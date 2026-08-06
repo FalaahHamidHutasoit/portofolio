@@ -31,7 +31,7 @@ export default function Contact() {
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-3">Mari Berkolaborasi!</h3>
               <p className="text-slate-600 leading-relaxed text-[15px]">
-                Saya selalu terbuka untuk mendiskusikan peluang baru, terutama yang berkaitan dengan arsitektur <span className="font-semibold text-blue-600">Backend Development</span>, optimasi database, atau sekadar berbagi <i>insight</i> tentang keamanan sistem web.
+                Saya selalu terbuka untuk mendiskusikan peluang baru, terutama yang berkaitan dengan arsitektur <span className="font-semibold text-blue-600">Backend Development</span>, optimasi database, atau sekadar berbagi insight tentang keamanan sistem web.
               </p>
             </div>
 

@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="w-full lg:w-1/2">
             <p className="text-blue-600 font-semibold tracking-wide mb-2 text-sm md:text-base uppercase">Welcome to my portfolio</p>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4">
-              Hi, Im <br/>
+              Halo, Saya <br/>
               <span className="text-blue-600 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-500">Falaah Hamid Hutasoit</span>
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-slate-600 mb-6">
