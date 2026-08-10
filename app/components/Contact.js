@@ -42,7 +42,7 @@ export default function Contact() {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email Me</p>
+                  <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email</p>
                   <p className="font-bold text-slate-900">falaahhamidhutasoit@email.com</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function Contact() {
                   <i className="fas fa-map-marker-alt"></i>
                 </div>
                 <div>
-                  <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Location</p>
+                  <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Lokasi</p>
                   <p className="font-bold text-slate-900">Jakarta, Indonesia</p>
                 </div>
               </div>

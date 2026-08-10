@@ -20,7 +20,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="#projects" className="px-8 py-3.5 bg-blue-600 text-white font-medium rounded-xl shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
-                <i className="fas fa-layer-group"></i> View Projects
+                <i className="fas fa-layer-group"></i> Lihat Project
               </a>
               <a 
               href="/cv-falaah.pdf" 

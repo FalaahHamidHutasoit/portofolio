@@ -19,7 +19,7 @@ export default function About() {
         
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Tentang Saya</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </div>
 
@@ -30,7 +30,7 @@ export default function About() {
             {/* Left Column: Text Content */}
             <div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                Passionate Backend Developer
+                Pengembanag Sistem Backend
               </h3>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Sebagai mahasiswa Manajemen Informatika, saya memiliki minat yang kuat di bidang Backend Development. Saya senang membangun logika aplikasi yang terstruktur, mengelola database, dan mengembangkan sistem yang efisien serta aman. Bagi saya, backend bukan hanya tentang menulis kode, tetapi juga menciptakan fondasi yang kuat agar sebuah aplikasi dapat berjalan dengan baik dan memberikan pengalaman terbaik bagi penggunanya.
@@ -43,8 +43,8 @@ export default function About() {
                     <i className="fas fa-graduation-cap text-xl"></i>
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500 mb-0.5">Education</p>
-                    <p className="font-semibold text-slate-900">Management Informatics</p>
+                    <p className="text-sm text-slate-500 mb-0.5">Pendidikan</p>
+                    <p className="font-semibold text-slate-900">Manajemen Informatika</p>
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function About() {
                     <i className="fas fa-map-marker-alt text-xl"></i>
                   </div>
                   <div>
-                    <p className="text-sm text-slate-500 mb-0.5">Location</p>
+                    <p className="text-sm text-slate-500 mb-0.5">Lokasi</p>
                     <p className="font-semibold text-slate-900">Jakarta, Indonesia</p>
                   </div>
                 </div>

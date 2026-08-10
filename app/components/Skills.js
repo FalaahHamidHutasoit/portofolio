@@ -66,7 +66,7 @@ export default function Skills() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Skills & Expertise</h2>
+          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Skill & Expertise</h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
         </div>
 

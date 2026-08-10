@@ -36,7 +36,7 @@ export default function Certificates() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Licenses & Certifications</h2>
+          <h2 className="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">Sertifikat & Lisensi</h2>
           <p className="text-slate-600">Kredensial profesional untuk memvalidasi keahlian dan kompetensi teknis.</p>
           <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mt-6"></div>
         </div>

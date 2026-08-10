@@ -10,7 +10,7 @@ export default function Projects() {
         { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
       ],
-      description: "A comprehensive management system for booking futsal fields, managing schedules, and processing payments securely.",
+      description: "Sistem manajemen komprehensif untuk pemesanan lapangan futsal, pengelolaan jadwal, dan pemrosesan pembayaran secara aman.",
       links: {
         demo: "#",
         github: "#"
@@ -19,13 +19,13 @@ export default function Projects() {
     {
       id: 2,
       coverText: "Website Spepart RELASKA",
-      title: "Digital Invitation (Seikarsa)",
+      title: "Website Spepart RELASKA",
       bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
       techs: [
         { name: "Laravel", color: "bg-blue-100 text-blue-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
       ],
-      description: "A beautifully designed, responsive digital wedding invitation platform with interactive features, RSVP form, and custom animations.",
+      description: "Web untuk e-commerce dan katalog penjualan sparepart komputer. Sistem ini dirancang dengan fokus pada efisiensi pengelolaan inventaris barang, kemudahan pencarian produk, dan manajemen basis data yang terstruktur.",
       links: {
         demo: "https://relaska.my.id/",
         github: "https://github.com/FalaahHamidHutasoit/relaska-computer",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
@@ -41,7 +41,7 @@ export default function Projects() {
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
           <div>
-            <h2 className="text-4xl font-extrabold text-slate-900 mb-3">Featured Projects</h2>
+            <h2 className="text-4xl font-extrabold text-slate-900 mb-3">Projects</h2>
             <div className="w-20 h-1.5 bg-blue-600 rounded-full"></div>
           </div>
           <a 
