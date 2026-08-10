@@ -15,7 +15,7 @@ export default function Certificates() {
       icon: "fas fa-database",
       bgColor: "bg-blue-50 text-blue-600 border-blue-100",
       description: "Sertifikasi profesional yang memvalidasi kompetensi dalam merancang arsitektur database, optimasi query, manajemen penyimpanan, serta memastikan keamanan data sistem backend.",
-      image: "/cert-db.jpg" // 👈 Pastikan nama file ini sesuai dengan yang ada di folder public
+      image: "/cert-db.jpg" 
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function Certificates() {
       icon: "fas fa-laptop-house",
       bgColor: "bg-indigo-50 text-indigo-600 border-indigo-100",
       description: "Sertifikasi kompetensi yang membuktikan keahlian teknis dalam pengoperasian sistem komputer, manajemen berkas, efisiensi kerja digital, dan pemecahan masalah dasar pada perangkat keras & lunak.",
-      image: "/sertifikat TOK.jpg" // 👈 Pastikan nama file ini sesuai dengan yang ada di folder public
+      image: "/sertifikat TOK.jpg"
     }
   ];
 
@@ -50,7 +50,7 @@ export default function Certificates() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: cert.id * 0.1 }}
               className="bg-slate-50/60 rounded-[2rem] p-8 border border-slate-100 shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)] hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group cursor-pointer"
-              onClick={() => setSelectedCert(cert)} // 👈 Aksi ketika card diklik
+              onClick={() => setSelectedCert(cert)} 
             >
               <div>
                 <div className="flex justify-between items-start mb-6">
