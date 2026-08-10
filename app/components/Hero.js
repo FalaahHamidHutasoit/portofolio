@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 pb-12 relative">
