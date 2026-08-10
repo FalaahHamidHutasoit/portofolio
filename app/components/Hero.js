@@ -21,9 +21,12 @@ export default function Hero() {
               <a href="#projects" className="px-8 py-3.5 bg-blue-600 text-white font-medium rounded-xl shadow-lg shadow-blue-500/30 hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
                 <i className="fas fa-layer-group"></i> View Projects
               </a>
-              <a href="#" className="px-8 py-3.5 bg-white text-slate-800 font-medium rounded-xl shadow-sm border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
-                <i className="fas fa-download"></i> Download CV
-              </a>
+              <a 
+              href="/cv-falaah.pdf" 
+              download="CV-falaah.pdf"
+              className="px-8 py-4 rounded-xl bg-white text-slate-900 font-semibold border border-slate-200 hover:border-blue-500 hover:text-blue-600 transition-all flex items-center gap-2">
+              <i className="fas fa-download"></i> Download CV
+            </a>
             </div>
           </div>
 
