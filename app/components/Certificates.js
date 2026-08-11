@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 
 export default function Certificates() {
-  // State untuk menyimpan data sertifikat yang sedang diklik (dibuka)
   const [selectedCert, setSelectedCert] = useState(null);
 
   const certificatesList = [
