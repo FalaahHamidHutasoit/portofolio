@@ -44,7 +44,7 @@ export default function Projects() {
       description: "Sistem informasi akademik berbasis web untuk mengotomatisasi proses pemetaan (plotting) dosen pembimbing dengan mahasiswa. Dibangun menggunakan PHP Native, sistem ini menonjolkan efisiensi manipulasi database relasional dan logika pengelolaan data yang terstruktur.",
       links: {
         demo: "#",
-        github: "#",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+        github: "https://github.com/FalaahHamidHutasoit/Ploting-Dosen",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
       }
     }
 
