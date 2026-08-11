@@ -30,6 +30,22 @@ export default function Projects() {
         demo: "https://relaska.my.id/",
         github: "https://github.com/FalaahHamidHutasoit/relaska-computer",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
       }
+    },
+
+    {
+      id: 3,
+      coverText: "Sistem Plotting Akademik",
+      title: "Sistem Plotting Akademik Dosen dan Mahasiswa",
+      bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
+      techs: [
+        { name: "PHP Native", color: "bg-blue-100 text-blue-600" },
+        { name: "MySQL", color: "bg-slate-100 text-slate-700" }
+      ],
+      description: "Sistem informasi akademik berbasis web untuk mengotomatisasi proses pemetaan (plotting) dosen pembimbing dengan mahasiswa. Dibangun menggunakan PHP Native, sistem ini menonjolkan efisiensi manipulasi database relasional dan logika pengelolaan data yang terstruktur.",
+      links: {
+        demo: "#",
+        github: "#",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+      }
     }
 
   ];
