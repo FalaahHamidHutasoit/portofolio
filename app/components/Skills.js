@@ -14,7 +14,7 @@ export default function Skills() {
         listItemHover: "group-hover/item:bg-blue-50 group-hover/item:border-blue-200",
         listCheckHover: "group-hover/item:text-blue-500"
       },
-      items: ["PHP", "CodeIgniter 4 (MVC)", "Node.js / Next.js", "RESTful API Development"]
+      items: ["PHP", "CodeIgniter 4 (MVC)", "Node.js / Next.js",]
     },
     {
       title: "Databases & Storage",
