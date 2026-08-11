@@ -13,7 +13,7 @@ export default function Projects() {
       description: "Sistem manajemen komprehensif untuk pemesanan lapangan futsal, pengelolaan jadwal, dan pemrosesan pembayaran secara aman.",
       links: {
         demo: "#",
-        github: "#"
+        github: "https://github.com/FalaahHamidHutasoit/Website-Futsal"
       }
     },
     {
@@ -46,7 +46,7 @@ export default function Projects() {
         demo: "#",
         github: "https://github.com/FalaahHamidHutasoit/Ploting-Dosen",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
       }
-    }
+    }, 
 
   ];
 
