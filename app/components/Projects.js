@@ -1,10 +1,15 @@
+"use client";
+import { useState } from 'react';
+
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+  
   const projectList = [
     {
       id: 1,
       coverText: "Futsal Booking System",
       title: "Futsal Field Booking System",
-      bgGradient: "from-blue-600 to-blue-900", // Gradient Biru
+      bgGradient: "from-blue-600 to-blue-900",
       techs: [
         { name: "PHP", color: "bg-blue-100 text-blue-600" },
         { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" },
@@ -18,9 +23,9 @@ export default function Projects() {
     },
     {
       id: 2,
-      coverText: "Website Spepart RELASKA",
-      title: "Website Spepart RELASKA",
-      bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
+      coverText: "Website Sparepart RELASKA",
+      title: "Website Sparepart RELASKA",
+      bgGradient: "from-cyan-500 to-blue-500",
       techs: [
         { name: "Laravel", color: "bg-blue-100 text-blue-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
@@ -28,15 +33,14 @@ export default function Projects() {
       description: "Web untuk e-commerce dan katalog penjualan sparepart komputer. Sistem ini dirancang dengan fokus pada efisiensi pengelolaan inventaris barang, kemudahan pencarian produk, dan manajemen basis data yang terstruktur.",
       links: {
         demo: "https://relaska.my.id/",
-        github: "https://github.com/FalaahHamidHutasoit/relaska-computer",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+        github: "https://github.com/FalaahHamidHutasoit/relaska-computer"
       }
     },
-
     {
       id: 3,
       coverText: "Sistem Plotting Akademik",
       title: "Sistem Plotting Akademik Dosen dan Mahasiswa",
-      bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
+      bgGradient: "from-cyan-500 to-blue-500",
       techs: [
         { name: "PHP Native", color: "bg-blue-100 text-blue-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
@@ -44,15 +48,14 @@ export default function Projects() {
       description: "Sistem informasi akademik berbasis web untuk mengotomatisasi proses pemetaan (plotting) dosen pembimbing dengan mahasiswa. Dibangun menggunakan PHP Native, sistem ini menonjolkan efisiensi manipulasi database relasional dan logika pengelolaan data yang terstruktur.",
       links: {
         demo: "#",
-        github: "#",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+        github: "#"
       }
     }, 
-
     {
       id: 4,
       coverText: "Portal Berita",
       title: "Sistem Informasi Berita",
-      bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
+      bgGradient: "from-cyan-500 to-blue-500",
       techs: [
         { name: "PHP Native", color: "bg-blue-100 text-blue-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
@@ -60,13 +63,13 @@ export default function Projects() {
       description: "Platform portal berita berbasis web. Sistem ini memungkinkan pengelolaan artikel (CRUD), kategorisasi konten, dan manajemen media secara efisien melalui dashboard admin yang terintegrasi.",
       links: {
         demo: "#",
-        github: "https://github.com/FalaahHamidHutasoit/Portal-Berita",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+        github: "https://github.com/FalaahHamidHutasoit/Portal-Berita"
       }
-    },  
-
-    
-
+    }
   ];
+
+  // LOGIKA PENTING: Jika showAll true, tampilkan semua. Jika false, potong ambil 2 teratas saja.
+  const displayedProjects = showAll ? projectList : projectList.slice(0, 2);
 
   return (
     <section id="projects" className="py-24">
@@ -78,18 +81,22 @@ export default function Projects() {
             <h2 className="text-4xl font-extrabold text-slate-900 mb-3">Projects</h2>
             <div className="w-20 h-1.5 bg-blue-600 rounded-full"></div>
           </div>
-          <a 
-            href="#" 
-            className="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2 group transition-colors"
+          
+          {/* Tombol yang sudah diperbaiki fungsinya */}
+          <button 
+            onClick={() => setShowAll(!showAll)}
+            className="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2 group transition-colors cursor-pointer"
           >
-            View All Projects 
-            <i className="fas fa-arrow-right transform group-hover:translate-x-1 transition-transform"></i>
-          </a>
+            {showAll ? "Show Less" : "View All Projects"} 
+            <i className={`fas fa-arrow-right transform transition-transform ${showAll ? '-scale-x-100' : 'group-hover:translate-x-1'}`}></i>
+          </button>
         </div>
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {projectList.map((project) => (
+          
+          {/* Mapping sekarang menggunakan displayedProjects, bukan projectList */}
+          {displayedProjects.map((project) => (
             <div 
               key={project.id} 
               className="bg-white rounded-[2rem] overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100 transition-transform duration-300 hover:-translate-y-2 group"
@@ -100,15 +107,15 @@ export default function Projects() {
                   {project.coverText}
                 </h3>
 
-                {/* Action Buttons (Link & GitHub) */}
+                {/* Action Buttons */}
                 <div className="absolute bottom-6 left-6 flex gap-3">
-                  {project.links.demo && (
-                    <a href={project.links.demo} className="w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+                  {project.links.demo !== "#" && (
+                    <a href={project.links.demo} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-link"></i>
                     </a>
                   )}
-                  {project.links.github && (
-                    <a href={project.links.github} className="w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
+                  {project.links.github !== "#" && (
+                    <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-lg hover:scale-110 transition-transform duration-300">
                       <i className="fab fa-github text-lg"></i>
                     </a>
                   )}
