@@ -34,6 +34,22 @@ export default function Projects() {
 
     {
       id: 3,
+      coverText: "Sistem Plotting Akademik",
+      title: "Sistem Plotting Akademik Dosen dan Mahasiswa",
+      bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
+      techs: [
+        { name: "PHP Native", color: "bg-blue-100 text-blue-600" },
+        { name: "MySQL", color: "bg-slate-100 text-slate-700" }
+      ],
+      description: "Sistem informasi akademik berbasis web untuk mengotomatisasi proses pemetaan (plotting) dosen pembimbing dengan mahasiswa. Dibangun menggunakan PHP Native, sistem ini menonjolkan efisiensi manipulasi database relasional dan logika pengelolaan data yang terstruktur.",
+      links: {
+        demo: "#",
+        github: "#",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
+      }
+    }, 
+
+    {
+      id: 4,
       coverText: "Portal Berita",
       title: "Sistem Informasi Berita",
       bgGradient: "from-cyan-500 to-blue-500", // Gradient Hijau
@@ -41,7 +57,7 @@ export default function Projects() {
         { name: "PHP Native", color: "bg-blue-100 text-blue-600" },
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
       ],
-      description: "Platform portal berita berbasis web yang dilengkapi dengan Content Management System (CMS) kustom. Sistem ini memungkinkan pengelolaan artikel (CRUD), kategorisasi konten, dan manajemen media secara efisien melalui dashboard admin yang terintegrasi.",
+      description: "Platform portal berita berbasis web. Sistem ini memungkinkan pengelolaan artikel (CRUD), kategorisasi konten, dan manajemen media secara efisien melalui dashboard admin yang terintegrasi.",
       links: {
         demo: "#",
         github: "https://github.com/FalaahHamidHutasoit/Portal-Berita",// Seikarsa mungkin private, jadi kita sembunyikan tombol github-nya
