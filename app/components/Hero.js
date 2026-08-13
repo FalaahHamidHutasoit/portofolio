@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         
         {/* UBAH: flex-col biar foto di atas saat di HP, lg:flex-row menyamping di Laptop */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+       <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-12 lg:gap-16">
           
           {/* Frame Foto Profil (Dipindah kodenya ke atas agar muncul duluan di HP) */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
