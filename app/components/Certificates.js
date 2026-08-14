@@ -17,6 +17,7 @@ export default function Certificates() {
       description: "Sertifikasi profesional yang memvalidasi kompetensi dalam merancang arsitektur database, optimasi query, manajemen penyimpanan, serta memastikan keamanan data sistem backend.",
       image: "/cert-db.jpg" 
     },
+    
     {
       id: 2,
       title: "Sertifikat TOK (Tenaga Operator Komputer)",
