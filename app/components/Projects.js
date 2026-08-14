@@ -23,14 +23,14 @@ export default function Projects() {
     },
     {
       id: 2,
-      coverText: "Website Sparepart RELASKA",
-      title: "Website Sparepart RELASKA",
+      coverText: "E-Commerce RELASKA", // Judul cover dibikin lebih singkat
+      title: "Sistem Katalog & E-Commerce Sparepart", // Judul detail dibikin lebih teknis
       bgGradient: "from-cyan-500 to-blue-500",
       techs: [
-        { name: "Laravel", color: "bg-blue-100 text-blue-600" },
+        { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" }, // Diubah dari Laravel ke CI4
         { name: "MySQL", color: "bg-slate-100 text-slate-700" }
       ],
-      description: "Web untuk e-commerce dan katalog penjualan sparepart komputer. Sistem ini dirancang dengan fokus pada efisiensi pengelolaan inventaris barang, kemudahan pencarian produk, dan manajemen basis data yang terstruktur.",
+      description: "Platform e-commerce yang dirancang khusus untuk penjualan dan manajemen katalog sparepart komputer. Dilengkapi dengan fitur pengelolaan inventaris yang efisien, sistem pencarian produk dinamis, dan struktur database yang teroptimasi untuk performa tinggi.",
       links: {
         demo: "https://relaska.my.id/",
         github: "https://github.com/FalaahHamidHutasoit/relaska-computer"
