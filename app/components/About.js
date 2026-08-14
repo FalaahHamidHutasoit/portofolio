@@ -62,7 +62,7 @@ export default function About() {
             </div>
 
             {/* Right Column: 3D Illustration Graphic */}
-            <div className="flex justify-center items-center py-8 lg:py-0">
+            <div className="hidden lg:flex justify-center items-center py-8 lg:py-0">
               <div className="relative w-64 h-64 md:w-72 md:h-72">
                 {/* Bottom Graphic Box (Purple/Blue) */}
                 <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-3xl transform rotate-6 scale-105 shadow-lg transition-transform duration-500 hover:rotate-12"></div>
