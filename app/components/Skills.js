@@ -60,7 +60,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="relative py-24 bg-slate-50 overflow-hidden">
+    <section id="skills" className="relative py-16 md:py-24 bg-slate-50 overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-400/10 rounded-full mix-blend-multiply filter blur-3xl opacity-50 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
