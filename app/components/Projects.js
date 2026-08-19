@@ -11,14 +11,15 @@ export default function Projects() {
       title: "Futsal Field Booking System",
       bgGradient: "from-blue-600 to-blue-900",
       techs: [
-        { name: "PHP", color: "bg-blue-100 text-blue-600" },
-        { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" },
-        { name: "MySQL", color: "bg-slate-100 text-slate-700" }
+        { name: "React", color: "bg-blue-100 text-blue-600" },
+        { name: "Next.js", color: "bg-red-100 text-red-600" },
+        { name: "Prisma ORM", color: "bg-slate-100 text-slate-700" },
+        { name: "MySQL", color: "bg-blue-100 text-slate-700" }
       ],
       description: "Sistem manajemen komprehensif untuk pemesanan lapangan futsal, pengelolaan jadwal, dan pemrosesan pembayaran secara aman.",
       links: {
         demo: "#",
-        github: "https://github.com/FalaahHamidHutasoit/Website-Futsal"
+        github: "https://github.com/FalaahHamidHutasoit/Futsal-Web"
       }
     },
     {
