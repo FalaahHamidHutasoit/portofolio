@@ -27,6 +27,17 @@ export default function Certificates() {
       bgColor: "bg-indigo-50 text-indigo-600 border-indigo-100",
       description: "Sertifikasi kompetensi yang membuktikan keahlian teknis dalam pengoperasian sistem komputer, manajemen berkas, efisiensi kerja digital, dan pemecahan masalah dasar pada perangkat keras & lunak.",
       image: "/sertifikat TOK.jpg"
+    },
+
+    {
+      id: 3,
+      title: "Presenter at IC-BESTS International Conference",
+      issuer: "Politeknik LP3I Jakarta",
+      date: "Juli 2026",
+      icon: "fas fa-chalkboard-teacher", // Icon guru/presenter
+      bgColor: "bg-emerald-50 text-emerald-600 border-emerald-100", // Warna hijau
+      description: "Berpartisipasi aktif sebagai 'Member of Presenter' dalam ajang International Conference on Business, Economics, Technology, and Social (IC-BESTS) 2026. Pengalaman ini membuktikan kemampuan komunikasi profesional, public speaking, serta pemahaman komprehensif terhadap wawasan teknologi dan akademik global.",
+      image: "FALAAH HAMID HUTASOIT Member certificate_page-0001.jpg" // Ganti nama file ini sesuai dengan foto sertifikat yang kamu simpan di folder public
     }
   ];
 
