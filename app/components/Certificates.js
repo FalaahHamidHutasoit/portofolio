@@ -21,7 +21,7 @@ export default function Certificates() {
     {
       id: 2,
       title: "Sertifikat TOK (Tenaga Operator Komputer)",
-      issuer: "Lembaga Sertifikasi",
+      issuer: "Lembaga Sertifikasi/ BNSP",
       date: "2024",
       icon: "fas fa-laptop-house",
       bgColor: "bg-indigo-50 text-indigo-600 border-indigo-100",
