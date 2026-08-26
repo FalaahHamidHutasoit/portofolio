@@ -37,7 +37,7 @@ export default function Certificates() {
       icon: "fas fa-chalkboard-teacher", // Icon guru/presenter
       bgColor: "bg-emerald-50 text-emerald-600 border-emerald-100", // Warna hijau
       description: "Berpartisipasi aktif sebagai 'Member of Presenter' dalam ajang International Conference on Business, Economics, Technology, and Social (IC-BESTS) 2026. Pengalaman ini membuktikan kemampuan komunikasi profesional, public speaking, serta pemahaman komprehensif terhadap wawasan teknologi dan akademik global.",
-      image: "/FALAAH HAMID HUTASOIT Member certificate_page-0001.jpg" // Ganti nama file ini sesuai dengan foto sertifikat yang kamu simpan di folder public
+      image: "FALAAH HAMID HUTASOIT Member certificate_page-0001.jpg" // Ganti nama file ini sesuai dengan foto sertifikat yang kamu simpan di folder public
     }
   ];
 
