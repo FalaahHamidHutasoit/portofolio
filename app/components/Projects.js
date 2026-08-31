@@ -80,7 +80,7 @@ export default function Projects() {
       description: "Aplikasi Web Cash Management yang dirancang untuk mempermudah pencatatan pemasukan, pelacakan pengeluaran, dan kalkulasi saldo secara presisi. Sistem ini mengimplementasikan struktur backend yang solid dengan fitur pelaporan transaksi komprehensif untuk memantau arus kas.",
       links: {
         demo: "", // Isi dengan link hosting kalau sudah di-deploy
-        github: "https://github.com/FalaahHamidHutasoit/" // Jangan lupa tambahin link repo GitHub-nya
+        github: "https://github.com/FalaahHamidHutasoit/Finance-Tracker" // Jangan lupa tambahin link repo GitHub-nya
       }
     },  
 
