@@ -66,7 +66,24 @@ export default function Projects() {
         demo: "#",
         github: "https://github.com/FalaahHamidHutasoit/Portal-Berita"
       }
-    }
+    },
+
+    {
+      id: 5, // Sesuaikan dengan urutan ID terakhirmu
+      coverText: "Finance Tracker", 
+      title: "Sistem Manajemen Kas & Keuangan", 
+      bgGradient: "from-emerald-500 to-green-500", // Pakai gradasi hijau biar identik dengan tema "Keuangan/Uang"
+      techs: [
+        { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" }, 
+        { name: "MySQL", color: "bg-slate-100 text-slate-700" }
+      ],
+      description: "Aplikasi Web Cash Management yang dirancang untuk mempermudah pencatatan pemasukan, pelacakan pengeluaran, dan kalkulasi saldo secara presisi. Sistem ini mengimplementasikan struktur backend yang solid dengan fitur pelaporan transaksi komprehensif untuk memantau arus kas.",
+      links: {
+        demo: "", // Isi dengan link hosting kalau sudah di-deploy
+        github: "https://github.com/FalaahHamidHutasoit/" // Jangan lupa tambahin link repo GitHub-nya
+      }
+    },  
+
   ];
 
   // LOGIKA PENTING: Jika showAll true, tampilkan semua. Jika false, potong ambil 2 teratas saja.
