@@ -79,7 +79,7 @@ export default function Projects() {
       ],
       description: "Aplikasi Web Cash Management yang dirancang untuk mempermudah pencatatan pemasukan, pelacakan pengeluaran, dan kalkulasi saldo secara presisi. Sistem ini mengimplementasikan struktur backend yang solid dengan fitur pelaporan transaksi komprehensif untuk memantau arus kas.",
       links: {
-        demo: "", // Isi dengan link hosting kalau sudah di-deploy
+        demo: "#", // Isi dengan link hosting kalau sudah di-deploy
         github: "https://github.com/FalaahHamidHutasoit/Finance-Tracker" // Jangan lupa tambahin link repo GitHub-nya
       }
     }, 
@@ -95,7 +95,7 @@ export default function Projects() {
       ],
       description: "Aplikasi Point of Sale (POS) dan manajemen inventaris yang dikembangkan khusus untuk operasional. Sistem ini dilengkapi dengan fitur penanganan transaksi kasir, cetak struk otomatis, serta modul stock opname untuk melacak ketersediaan bahan baku dan riwayat keluar-masuk barang secara real-time.",
       links: {
-        demo: "", // Isi jika ada link live-nya
+        demo: "#", // Isi jika ada link live-nya
         github: "https://github.com/FalaahHamidHutasoit/Point-Of-Sale-System" // Jangan lupa lengkapi link repo-nya
       }
     },
