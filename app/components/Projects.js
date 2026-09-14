@@ -82,7 +82,23 @@ export default function Projects() {
         demo: "", // Isi dengan link hosting kalau sudah di-deploy
         github: "https://github.com/FalaahHamidHutasoit/Finance-Tracker" // Jangan lupa tambahin link repo GitHub-nya
       }
-    },  
+    }, 
+    
+    {
+      id: 6,
+      coverText: "Sistem POS", 
+      title: "Sistem Point of Sale (POS)", 
+      bgGradient: "from-orange-500 to-amber-500", // Tema warna hangat ala kedai kopi
+      techs: [
+        { name: "CodeIgniter 4", color: "bg-red-100 text-red-600" }, 
+        { name: "MySQL", color: "bg-slate-100 text-slate-700" }
+      ],
+      description: "Aplikasi Point of Sale (POS) dan manajemen inventaris yang dikembangkan khusus untuk operasional. Sistem ini dilengkapi dengan fitur penanganan transaksi kasir, cetak struk otomatis, serta modul stock opname untuk melacak ketersediaan bahan baku dan riwayat keluar-masuk barang secara real-time.",
+      links: {
+        demo: "", // Isi jika ada link live-nya
+        github: "https://github.com/FalaahHamidHutasoit/Point-Of-Sale-System" // Jangan lupa lengkapi link repo-nya
+      }
+    },
 
   ];
 
