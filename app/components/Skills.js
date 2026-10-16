@@ -95,18 +95,16 @@ export default function Skills() {
               </div>
               
               {/* Skill Items */}
-              <ul className="space-y-4">
+              <div className="flex flex-wrap gap-2.5">
                 {cat.items.map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-slate-600 font-medium group/item cursor-default">
-                    <div className={`w-6 h-6 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center ${cat.theme.listItemHover} transition-colors`}>
-                      <i className={`fas fa-check text-[10px] text-slate-400 ${cat.theme.listCheckHover} transition-colors`}></i>
-                    </div>
-                    <span className="group-hover/item:translate-x-1 transition-transform duration-300 text-[15px]">
-                      {item}
-                    </span>
-                  </li>
+                  <span
+                    key={i}
+                    className={`px-3.5 py-2 rounded-full text-sm font-medium ${cat.theme.iconBase} hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 cursor-default`}
+                  >
+                    {item}
+                  </span>
                 ))}
-              </ul>
+              </div>
               
             </motion.div>
           ))}

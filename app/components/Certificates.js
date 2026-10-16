@@ -1,10 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Certificates() {
   const [selectedCert, setSelectedCert] = useState(null);
+
+  // Tutup modal dengan tombol Escape
+  useEffect(() => {
+    const onKey = (e) => e.key === "Escape" && setSelectedCert(null);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
 
   const certificatesList = [
     {
@@ -37,7 +44,7 @@ export default function Certificates() {
       icon: "fas fa-chalkboard-teacher", // Icon guru/presenter
       bgColor: "bg-emerald-50 text-emerald-600 border-emerald-100", // Warna hijau
       description: "Berpartisipasi aktif sebagai 'Member of Presenter' dalam ajang International Conference on Business, Economics, Technology, and Social (IC-BESTS) 2026. Pengalaman ini membuktikan kemampuan komunikasi profesional, public speaking, serta pemahaman komprehensif terhadap wawasan teknologi dan akademik global.",
-      image: "FALAAH HAMID HUTASOIT Member certificate_page-0001.jpg" // Ganti nama file ini sesuai dengan foto sertifikat yang kamu simpan di folder public
+      image: "/FALAAH HAMID HUTASOIT Member certificate_page-0001.jpg" // Ganti nama file ini sesuai dengan foto sertifikat yang kamu simpan di folder public
     }
   ];
 
@@ -65,6 +72,17 @@ export default function Certificates() {
               onClick={() => setSelectedCert(cert)} 
             >
               <div>
+                {/* Thumbnail sertifikat (otomatis disembunyikan kalau gambar tidak ditemukan) */}
+                <div className="relative -mx-8 -mt-8 mb-6 h-44 overflow-hidden rounded-t-[2rem] bg-slate-200">
+                  <img
+                    src={cert.image}
+                    alt={`Sertifikat ${cert.title}`}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => { e.currentTarget.parentElement.style.display = "none"; }}
+                  />
+                </div>
+
                 <div className="flex justify-between items-start mb-6">
                   <div className={`w-14 h-14 rounded-2xl ${cert.bgColor} border flex items-center justify-center text-2xl shadow-sm transition-transform duration-300 group-hover:scale-110`}>
                     <i className={cert.icon}></i>
@@ -88,7 +106,7 @@ export default function Certificates() {
 
               <div className="mt-8 pt-4 border-t border-slate-200/60 flex justify-end">
                 <span className="text-xs font-bold text-slate-400 group-hover:text-blue-600 transition-colors flex items-center gap-1">
-                  Klik untuk lihat <i className="fas fa-external-link-alt text-emerald-500 ml-1"></i>
+                  Lihat sertifikat <i className="fas fa-eye ml-1"></i>
                 </span>
               </div>
             </motion.div>
@@ -117,7 +135,7 @@ export default function Certificates() {
               {/* Tombol Close (X) */}
               <button 
                 onClick={() => setSelectedCert(null)}
-                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-red-500 text-white rounded-full flex items-center justify-center transition-colors duration-300"
+                aria-label="Tutup" className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/50 hover:bg-red-500 text-white rounded-full flex items-center justify-center transition-colors duration-300"
               >
                 <i className="fas fa-times text-lg"></i>
               </button>

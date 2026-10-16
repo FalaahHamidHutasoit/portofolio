@@ -46,7 +46,7 @@ export default function Hero() {
           {/* Teks */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 text-blue-600 font-semibold text-xs sm:text-sm mb-5">
-              <span></span> Halo, saya
+              Halo,saya
             </p>
 
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight text-slate-900 mb-3">
