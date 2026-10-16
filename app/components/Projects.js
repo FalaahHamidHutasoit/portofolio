@@ -51,7 +51,7 @@ const projectList = [
     image: "",
     techs: ["CodeIgniter 4", "MySQL"],
     description:
-      "Aplikasi web cash management untuk mencatat pemasukan, melacak pengeluaran, dan menghitung saldo secara presisi. Mengimplementasikan struktur backend yang solid dengan pelaporan transaksi komprehensif untuk memantau arus kas.",
+      "Aplikasi web cash management untuk mencatat pemasukan, melacak pengeluaran, dan menghitung saldo secara presisi. Mengimplementasikan struktur aplikasi yang solid dengan pelaporan transaksi komprehensif untuk memantau arus kas.",
     links: { demo: "#", github: "https://github.com/FalaahHamidHutasoit/Finance-Tracker" },
   },
   {

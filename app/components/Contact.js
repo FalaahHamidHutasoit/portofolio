@@ -40,7 +40,7 @@ export default function Contact() {
       <div className="relative z-10 pt-24 pb-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Yuk, Ngobrol!</h2>
+          <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Yuk, Ngobrol! </h2>
           <p className="text-slate-600 max-w-xl mx-auto">
             Lagi cari developer buat proyek, magang, atau sekadar mau tukar pikiran soal coding? Sapa aja, santai kok.
           </p>
@@ -57,9 +57,9 @@ export default function Contact() {
             className="flex-1 flex flex-col justify-center space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">Punya ide? Kita wujudkan bareng</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mb-3">Punya ide? Kita wujudkan bareng </h3>
               <p className="text-slate-600 leading-relaxed text-[15px]">
-                Aku suka banget ngulik <span className="font-semibold text-blue-600">backend</span>, database, dan bikin
+                Aku suka banget ngulik <span className="font-semibold text-blue-600">web development</span>, dari tampilan sampai database, dan bikin
                 sistem web yang rapi dan aman. Kalau kamu butuh teman diskusi atau tenaga tambahan buat proyekmu,
                 kabarin aja. Biasanya aku balas dalam 1x24 jam.
               </p>
@@ -117,7 +117,7 @@ export default function Contact() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="flex-[1.5] bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-slate-100"
           >
-            <h3 className="text-xl font-bold text-slate-900 mb-1">Tulis pesanmu di sini</h3>
+            <h3 className="text-xl font-bold text-slate-900 mb-1">Tulis pesanmu di sini </h3>
             <p className="text-sm text-slate-500 mb-6">Isi singkat aja, nanti tinggal pilih mau kirim lewat WhatsApp atau email.</p>
 
             <form className="space-y-5" onSubmit={sendWhatsApp}>
@@ -150,7 +150,7 @@ export default function Contact() {
       <footer className="relative z-20 w-full bg-slate-900 py-8 border-t border-slate-800 mt-auto">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-slate-400 text-sm font-medium tracking-wide">
-            Dibuat oleh Falaah &copy; {new Date().getFullYear()}
+            Dibuat dengan dan banyak baris kode oleh Falaah &copy; {new Date().getFullYear()}
           </p>
         </div>
       </footer>

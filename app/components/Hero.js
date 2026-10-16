@@ -53,12 +53,12 @@ export default function Hero() {
               Falaah Hamid Hutasoit
             </h1>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">
-              Backend Developer
+              Web Developer
             </h2>
 
             <p className="text-slate-600 mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed text-sm sm:text-base">
-              Mahasiswa Manajemen Informatika yang suka membangun sistem web yang rapi, aman, dan mudah dikembangkan,
-              dari desain database sampai logika aplikasi.
+              Mahasiswa Manajemen Informatika yang suka membangun aplikasi web yang rapi, aman, dan nyaman dipakai,
+              dari tampilan sampai database.
             </p>
 
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mb-8">

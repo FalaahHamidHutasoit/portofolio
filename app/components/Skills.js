@@ -5,7 +5,7 @@ export default function Skills() {
   // Kita tulis full nama class Tailwind-nya di sini biar gak di-purge
   const categories = [
     {
-      title: "Backend Core",
+      title: "Web Development",
       icon: "fas fa-code",
       theme: {
         line: "bg-blue-500",
@@ -14,7 +14,7 @@ export default function Skills() {
         listItemHover: "group-hover/item:bg-blue-50 group-hover/item:border-blue-200",
         listCheckHover: "group-hover/item:text-blue-500"
       },
-      items: ["PHP", "CodeIgniter 4 (MVC)", "Node.js / Next.js",]
+      items: ["PHP", "CodeIgniter 4 (MVC)", "Next.js & React", "Tailwind CSS"]
     },
     {
       title: "Databases & Storage",

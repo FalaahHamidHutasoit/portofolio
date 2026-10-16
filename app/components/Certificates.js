@@ -14,7 +14,7 @@ export default function Certificates() {
       date: "2025",
       icon: "fas fa-database",
       bgColor: "bg-blue-50 text-blue-600 border-blue-100",
-      description: "Sertifikasi profesional yang memvalidasi kompetensi dalam merancang arsitektur database, optimasi query, manajemen penyimpanan, serta memastikan keamanan data sistem backend.",
+      description: "Sertifikasi profesional yang memvalidasi kompetensi dalam merancang arsitektur database, optimasi query, manajemen penyimpanan, serta memastikan keamanan data pada sistem aplikasi.",
       image: "/cert-db.jpg" 
     },
     

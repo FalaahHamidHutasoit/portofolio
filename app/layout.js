@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Falaah Hamid Hutasoit | Backend Developer",
+  title: "Falaah Hamid Hutasoit | Web Developer",
   description:
-    "Portofolio Falaah Hamid Hutasoit, Backend Developer & Web Specialist dari Jakarta. PHP, CodeIgniter 4, MySQL, dan Next.js.",
+    "Portofolio Falaah Hamid Hutasoit, Web Developer dari Jakarta. PHP, CodeIgniter 4, MySQL, dan Next.js.",
   openGraph: {
-    title: "Falaah Hamid Hutasoit | Backend Developer",
+    title: "Falaah Hamid Hutasoit | Web Developer",
     description:
-      "Lihat project, skill, dan sertifikasi Falaah Hamid Hutasoit, Backend Developer dari Jakarta.",
+      "Lihat project, skill, dan sertifikasi Falaah Hamid Hutasoit, Web Developer dari Jakarta.",
     type: "website",
     locale: "id_ID",
     // Untuk gambar preview saat link dibagikan, tambahkan metadataBase (domain web kamu)
