@@ -10,7 +10,7 @@ export default function CtaBanner() {
           <div className="absolute -top-16 -right-16 w-64 h-64 rounded-full bg-white/10 blur-2xl"></div>
 
           <div className="relative">
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Tertarik bekerja sama? 🤝</h2>
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-white mb-3">Tertarik bekerja sama?</h2>
             <p className="text-blue-100 max-w-xl mx-auto mb-8 text-sm sm:text-base">
               Lagi cari web developer untuk magang, proyek, atau kolaborasi? Cerita aja kebutuhanmu, nanti kita cari solusinya bareng.
             </p>
