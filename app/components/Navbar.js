@@ -42,20 +42,20 @@ export default function Navbar() {
 
   const linkClass = (id) =>
     `relative font-medium transition-colors text-sm uppercase tracking-wide pb-1 ${
-      active === id ? "text-blue-600" : "text-slate-600 hover:text-blue-600"
+      active === id ? "text-blue-400" : "text-slate-300 hover:text-blue-400"
     }`;
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-100 transition-shadow ${
+      className={`fixed top-0 left-0 w-full bg-[#050b1e]/85 backdrop-blur-md z-50 border-b border-white/10 transition-shadow ${
         scrolled ? "shadow-sm" : ""
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <a href="#home" aria-label="Kembali ke atas" className="flex-shrink-0 font-extrabold text-2xl text-blue-600 tracking-wider">
-            F<span className="text-slate-800">H.</span>
+          <a href="#home" aria-label="Kembali ke atas" className="flex-shrink-0 font-extrabold text-2xl text-blue-400 tracking-wider">
+            F<span className="text-slate-100">H.</span>
           </a>
 
           {/* Menu Desktop */}
@@ -64,7 +64,7 @@ export default function Navbar() {
               <a key={item.id} href={`#${item.id}`} className={linkClass(item.id)}>
                 {item.name}
                 <span
-                  className={`absolute left-0 -bottom-0.5 h-0.5 bg-blue-600 rounded-full transition-all duration-300 ${
+                  className={`absolute left-0 -bottom-0.5 h-0.5 bg-blue-400 rounded-full transition-all duration-300 ${
                     active === item.id ? "w-full" : "w-0"
                   }`}
                 ></span>
@@ -72,7 +72,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
-              className="ml-2 px-5 py-2 rounded-xl bg-blue-600 text-white text-sm font-semibold shadow-md shadow-blue-500/30 hover:bg-blue-700 transition-all"
+              className="ml-2 px-5 py-2 rounded-xl bg-blue-500 text-white text-sm font-semibold shadow-md shadow-blue-500/40 hover:bg-blue-600 transition-all"
             >
               Hubungi Saya
             </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(!isOpen)}
               aria-label={isOpen ? "Tutup menu" : "Buka menu"}
               aria-expanded={isOpen}
-              className="text-slate-600 hover:text-blue-600 focus:outline-none text-2xl w-10 h-10 flex items-center justify-center"
+              className="text-slate-300 hover:text-blue-400 focus:outline-none text-2xl w-10 h-10 flex items-center justify-center"
             >
               <i className={`fas ${isOpen ? "fa-times" : "fa-bars"}`}></i>
             </button>
@@ -94,7 +94,7 @@ export default function Navbar() {
 
       {/* Dropdown HP */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-100 shadow-xl absolute w-full left-0">
+        <div className="md:hidden bg-[#071022] border-t border-white/10 shadow-xl absolute w-full left-0">
           <div className="px-4 pt-2 pb-6 space-y-2">
             {menuItems.map((item) => (
               <a
@@ -102,7 +102,7 @@ export default function Navbar() {
                 href={`#${item.id}`}
                 onClick={() => setIsOpen(false)}
                 className={`block px-4 py-3 text-base font-semibold rounded-xl transition-all ${
-                  active === item.id ? "text-blue-600 bg-blue-50" : "text-slate-700 hover:text-blue-600 hover:bg-blue-50"
+                  active === item.id ? "text-blue-400 bg-blue-500/10" : "text-slate-300 hover:text-blue-400 hover:bg-blue-500/10"
                 }`}
               >
                 {item.name}
@@ -111,7 +111,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="block text-center mt-3 px-4 py-3 rounded-xl bg-blue-600 text-white font-semibold"
+              className="block text-center mt-3 px-4 py-3 rounded-xl bg-blue-500 text-white font-semibold"
             >
               Hubungi Saya
             </a>

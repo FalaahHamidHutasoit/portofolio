@@ -1,8 +1,8 @@
 export default function CtaBanner() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[#0a1730]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-700 px-8 py-12 sm:px-14 text-center shadow-xl shadow-blue-500/20">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 px-8 py-12 sm:px-14 text-center shadow-xl shadow-blue-500/30">
           <div
             className="absolute inset-0 opacity-20"
             style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "22px 22px" }}

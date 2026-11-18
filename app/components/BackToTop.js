@@ -15,7 +15,7 @@ export default function BackToTop() {
     <a
       href="#home"
       aria-label="Kembali ke atas"
-      className={`fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-blue-600 text-white shadow-lg shadow-blue-500/30 flex items-center justify-center hover:bg-blue-700 hover:-translate-y-1 transition-all duration-300 ${
+      className={`fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-blue-500 text-white shadow-lg shadow-blue-500/40 flex items-center justify-center hover:bg-blue-600 hover:-translate-y-1 transition-all duration-300 ${
         show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"
       }`}
     >

@@ -5,7 +5,7 @@ export default function TechStack() {
     { name: "CodeIgniter", icon: "fas fa-fire", color: "text-red-500" },
     { name: "Next.js", icon: "fab fa-react", color: "text-cyan-500" },
     { name: "Tailwind CSS", icon: "fab fa-css3-alt", color: "text-sky-400" },
-    { name: "Git & GitHub", icon: "fab fa-github", color: "text-slate-700" },
+    { name: "Git & GitHub", icon: "fab fa-github", color: "text-slate-200" },
   ];
 
   // Lipatgandakan array jadi 4 kali supaya panjang banget ke samping 
@@ -13,15 +13,15 @@ export default function TechStack() {
   const marqueeItems = [...techList, ...techList, ...techList, ...techList];
 
   return (
-    <section className="w-full bg-slate-50 py-8 border-y border-slate-200 overflow-hidden">
+    <section className="w-full bg-[#071022] py-8 border-y border-white/10 overflow-hidden">
       <div className="animate-marquee flex w-max">
         {marqueeItems.map((tech, index) => (
           <div 
             key={index} 
-            className="flex items-center gap-3 px-6 py-3 mx-4 bg-white shadow-sm border border-slate-100 rounded-full hover:shadow-md transition-shadow cursor-default shrink-0"
+            className="flex items-center gap-3 px-6 py-3 mx-4 bg-[#0b1836] shadow-sm border border-white/10 rounded-full hover:shadow-lg hover:shadow-blue-500/20 hover:border-blue-500/40 transition-shadow cursor-default shrink-0"
           >
             <i className={`${tech.icon} ${tech.color} text-2xl`}></i>
-            <span className="font-semibold text-slate-700">{tech.name}</span>
+            <span className="font-semibold text-slate-200">{tech.name}</span>
           </div>
         ))}
       </div>
