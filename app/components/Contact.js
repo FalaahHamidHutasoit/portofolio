@@ -198,7 +198,7 @@ export default function Contact() {
       <footer className="relative z-20 w-full bg-[#03081a] py-8 border-t border-white/10 mt-auto">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-slate-400 text-sm font-medium tracking-wide">
-            Falaah Hamid Hutasoit &copy; {new Date().getFullYear()}
+            Dibuat oleh Falaah &copy; {new Date().getFullYear()}
           </p>
         </div>
       </footer>

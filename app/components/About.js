@@ -1,16 +1,25 @@
 export default function About() {
-  const stats = [
-    { value: "6", label: "Project", icon: "fas fa-layer-group" },
-    { value: "2", label: "Sertifikasi BNSP", icon: "fas fa-award" },
-    { value: "1", label: "Konferensi Internasional", icon: "fas fa-microphone-alt" },
-  ];
-
-  // Urutan dari yang terbaru
+  // Urutan dari yang terbaru — tiap item dikasih konteks, bukan cuma judul + tahun.
   const timeline = [
-    { year: "Juli 2026", title: "Presenter, IC-BESTS International Conference", desc: "Politeknik LP3I Jakarta", color: "bg-emerald-500" },
-    { year: "2025", title: "Sertifikasi Database Administrator", desc: "Sertifikasi kompetensi BNSP", color: "bg-blue-500" },
+    { year: "Juli 2026", title: "Presenter, IC-BESTS International Conference", desc: "Presentasi di konferensi internasional, Politeknik LP3I Jakarta", color: "bg-emerald-500" },
+    { year: "2025", title: "Sertifikasi Database Administrator", desc: "Sertifikasi kompetensi BNSP — database yang gua pakai di semua 6 proyek", color: "bg-blue-500" },
     { year: "2024", title: "Sertifikat TOK (Tenaga Operator Komputer)", desc: "Sertifikasi kompetensi BNSP", color: "bg-indigo-500" },
     { year: "Saat ini", title: "Manajemen Informatika", desc: "Politeknik LP3I Jakarta", color: "bg-slate-400" },
+  ];
+
+  const blocks = [
+    {
+      kicker: "KENAPA WEB + DATABASE",
+      text: "Gua paling betah di web karena hasilnya kelihatan langsung — tampilannya bisa dipakai orang, datanya rapi di belakang. Makanya 6 proyek gua semuanya begitu: PHP / CodeIgniter 4 di belakang, MySQL di bawahnya, dari tampilan sampai database satu sistem yang utuh.",
+    },
+    {
+      kicker: "CARA GUA KERJA",
+      text: "Gua mulai dari yang dipakai orang dulu: tampilannya enak dilihat, alurnya jelas. Baru ke belakangnya — logika aplikasi yang terstruktur, database yang rapi, dan sistem yang efisien serta aman. Web yang bagus buat gua bukan cuma kodenya jalan, tapi orang yang makai nggak bingung.",
+    },
+    {
+      kicker: "LAGI FOKUS KE APA",
+      text: "Sekarang gua mahasiswa Manajemen Informatika di Politeknik LP3I Jakarta, lagi mendalami web development dan database. Terbuka buat magang, proyek, atau kolaborasi — yang penting bisa belajar dan hasilnya kepakai beneran.",
+    },
   ];
 
   return (
@@ -23,26 +32,33 @@ export default function About() {
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/30 rounded-full filter blur-3xl opacity-60 z-0 translate-x-[-20%] translate-y-[-20%]"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/25 rounded-full filter blur-3xl opacity-60 z-0 translate-x-[20%] translate-y-[20%]"></div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-100 mb-4 tracking-tight">Tentang Saya</h2>
-          <div className="w-16 h-1 bg-blue-500 mx-auto rounded-full"></div>
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header rata kiri, bukan template tengah */}
+        <div className="mb-12 max-w-3xl">
+          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider mb-3">tentang saya</p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-100 leading-[1.05] tracking-tight mb-4">
+            Developer yang suka
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+              ngulik sampai ke database-nya.
+            </span>
+          </h2>
+          <p className="text-slate-400 leading-relaxed">
+            Bukan cuma tampilan. Gua ngurusin sistemnya dari depan sampai belakang — dan itu yang bikin gua betah.
+          </p>
         </div>
 
         <div className="bg-[#0b1836]/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgba(0,0,0,0.3)] border border-white/10 hover:border-blue-500/30 transition-colors">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Kiri: teks */}
-            <div>
-              <h3 className="text-2xl font-bold text-slate-100 mb-4">Web Developer</h3>
-              <p className="text-slate-400 leading-relaxed mb-8">
-                Sebagai mahasiswa Manajemen Informatika di Politeknik LP3I Jakarta, saya memiliki minat yang kuat di bidang
-                Web Development. Saya senang membangun aplikasi web dari tampilan hingga database: merancang antarmuka yang
-                nyaman dipakai, menyusun logika aplikasi yang terstruktur, dan mengembangkan sistem yang efisien serta aman.
-                Bagi saya, web yang bagus bukan hanya tentang menulis kode, tetapi juga memberikan pengalaman terbaik bagi
-                penggunanya.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            {/* Kiri: 3 blok cerita pendek, bukan satu paragraf CV */}
+            <div className="lg:col-span-7 space-y-9">
+              {blocks.map((b) => (
+                <div key={b.kicker}>
+                  <p className="font-mono text-[11px] tracking-wider text-blue-400 mb-2">{b.kicker}</p>
+                  <p className="text-slate-300 leading-relaxed text-[15px]">{b.text}</p>
+                </div>
+              ))}
 
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-10">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-10 pt-6 border-t border-white/10">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 shrink-0">
                     <i className="fas fa-graduation-cap text-xl"></i>
@@ -64,19 +80,12 @@ export default function About() {
               </div>
             </div>
 
-            {/* Kanan: statistik + timeline */}
-            <div>
-              <div className="grid grid-cols-3 gap-3 sm:gap-4 mb-8">
-                {stats.map((s) => (
-                  <div
-                    key={s.label}
-                    className="rounded-2xl bg-gradient-to-br from-blue-500/15 to-cyan-500/10 border border-blue-500/20 p-4 text-center hover:-translate-y-1 hover:border-blue-500/40 transition-all duration-300"
-                  >
-                    <i className={`${s.icon} text-blue-400 mb-2`}></i>
-                    <p className="text-3xl font-extrabold text-slate-100 leading-none mb-1">{s.value}</p>
-                    <p className="text-[11px] sm:text-xs font-medium text-slate-400 leading-tight">{s.label}</p>
-                  </div>
-                ))}
+            {/* Kanan: sekarang + timeline berkonten */}
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl bg-blue-500/10 border border-blue-500/20 p-5 mb-8">
+                <p className="font-mono text-[11px] tracking-wider text-blue-400 mb-1">SEKARANG</p>
+                <p className="font-bold text-slate-100">Mahasiswa MI — Politeknik LP3I Jakarta</p>
+                <p className="text-sm text-slate-400 mt-1">Terbuka buat magang, proyek, dan kolaborasi.</p>
               </div>
 
               <h4 className="text-sm font-bold text-slate-100 uppercase tracking-wider mb-5">Perjalanan & Pencapaian</h4>
