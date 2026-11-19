@@ -21,18 +21,25 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-32 pb-16 relative overflow-hidden bg-[#050b1e]">
-      {/* Latar: dot grid halus + glow */}
+      {/* Latar: grid halus + glow atas (no. 6) — grid memudar ke bawah */}
       <div
-        className="absolute inset-0 z-0 opacity-30"
-        style={{ backgroundImage: "radial-gradient(rgba(148,163,184,0.35) 1px, transparent 1px)", backgroundSize: "24px 24px" }}
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(96,165,250,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(96,165,250,0.10) 1px, transparent 1px)",
+          backgroundSize: "28px 28px",
+          maskImage: "linear-gradient(to bottom, black 0%, black 55%, transparent 95%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 55%, transparent 95%)",
+        }}
       ></div>
+      <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] max-w-none h-[420px] bg-blue-600/30 rounded-full filter blur-3xl z-0 pointer-events-none"></div>
       <div className="absolute -top-20 -right-20 w-[480px] h-[480px] bg-blue-600/40 rounded-full filter blur-3xl z-0 pointer-events-none"></div>
       <div className="absolute bottom-0 -left-20 w-[360px] h-[360px] bg-cyan-500/25 rounded-full filter blur-3xl z-0 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         {/* Label mono + status */}
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 sm:mb-6">
-          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider">// portfolio — 2026</p>
+          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider">portfolio — 2026</p>
           <span className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-emerald-400">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>

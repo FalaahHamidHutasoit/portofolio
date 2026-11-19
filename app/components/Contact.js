@@ -23,12 +23,16 @@ export default function Contact() {
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
+  // Pesan pembuka boleh diganti tiap ganti topik — tapi kalau user sudah
+  // ngetik pesannya sendiri, jangan ditimpa. Pembuka dikenali karena isinya
+  // persis salah satu starter di TOPICS.
+  const isStarter = (msg) => !msg || TOPICS.some((t) => t.starter === msg);
+
   const pickTopic = (topic) => {
     setForm((prev) => ({
       ...prev,
       subject: topic.subject,
-      // Isi pembuka cuma kalau pesannya masih kosong, biar tulisan lu nggak ketimpa.
-      message: prev.message ? prev.message : topic.starter,
+      message: isStarter(prev.message) ? topic.starter : prev.message,
     }));
   };
 
