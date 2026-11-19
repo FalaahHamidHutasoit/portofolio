@@ -95,7 +95,6 @@ export default function Contact() {
                 <div>
                   <p className="font-mono text-[11px] tracking-wider text-emerald-100/80 mb-1">PALING CEPAT DIBALAS</p>
                   <p className="text-2xl font-extrabold leading-tight">Chat di WhatsApp</p>
-                  <p className="text-emerald-100 text-sm mt-1">Biasanya dibalas &lt; 24 jam • WIB (Jakarta)</p>
                 </div>
                 <span className="w-12 h-12 shrink-0 rounded-full bg-white/15 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
                   <i className="fab fa-whatsapp"></i>
@@ -111,7 +110,7 @@ export default function Contact() {
                   <i className="fas fa-envelope"></i>
                 </div>
                 <div className="min-w-0">
-                  <p className="text-xs text-slate-500 font-semibold">Email — kalau mau yang formal</p>
+                  <p className="text-xs text-slate-500 font-semibold">Email</p>
                   <p className="font-bold text-slate-100 group-hover:text-blue-400 transition-colors break-all text-sm sm:text-base">{EMAIL}</p>
                 </div>
               </a>
@@ -184,8 +183,6 @@ export default function Contact() {
                 <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">Pesan</label>
                 <textarea id="message" name="message" rows="4" value={form.message} onChange={handleChange} className={inputClass} placeholder="Halo Falaah, aku mau cerita soal..." required></textarea>
               </div>
-              <p className="text-xs text-slate-500">Pesanmu nggak disimpan di mana-mana — langsung kebuka WhatsApp / email lu.</p>
-
               <div className="flex flex-col sm:flex-row gap-3">
                 <button type="submit" className="flex-1 bg-green-600 text-white font-bold py-4 rounded-xl hover:bg-green-700 transition-all shadow-lg shadow-green-500/30">
                   <i className="fab fa-whatsapp mr-2"></i> Kirim via WhatsApp
@@ -202,7 +199,7 @@ export default function Contact() {
       <footer className="relative z-20 w-full bg-[#03081a] py-8 border-t border-white/10 mt-auto">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-slate-400 text-sm font-medium tracking-wide">
-            Dibuat oleh Falaah &copy; {new Date().getFullYear()}
+            Falaah Hamid Hutasoit &copy; {new Date().getFullYear()}
           </p>
         </div>
       </footer>
