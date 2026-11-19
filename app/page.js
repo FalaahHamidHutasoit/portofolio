@@ -5,7 +5,6 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
-import CtaBanner from "./components/CtaBanner";
 import Contact from "./components/Contact";
 import BackToTop from "./components/BackToTop";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certificates />
-      <CtaBanner />
       <Contact />
       <BackToTop />
     </main>
