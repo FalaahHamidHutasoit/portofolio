@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         {/* Label mono + status */}
         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 sm:mb-6">
-          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider">portfolio — 2026</p>
+          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider">// portfolio — 2026</p>
           <span className="inline-flex items-center gap-2 font-mono text-xs sm:text-sm text-emerald-400">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>

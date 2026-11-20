@@ -72,7 +72,7 @@ const projectList = [
     coverText: "Portal Berita",
     title: "Sistem Informasi Berita",
     bgGradient: "from-slate-600 to-slate-800",
-    image: "",
+    image: "/projects/portal-berita.jpg",
     techs: ["PHP Native", "MySQL"],
     description:
       "Portal berita berbasis web dengan pengelolaan artikel (CRUD), kategorisasi konten, dan manajemen media melalui dashboard admin yang terintegrasi.",
@@ -90,7 +90,7 @@ const bentoLayout = {
   3: { span: "lg:col-span-4", horizontal: false, coverWidth: "", tall: false },
   4: { span: "lg:col-span-4", horizontal: false, coverWidth: "", tall: false },
   5: { span: "lg:col-span-4", horizontal: false, coverWidth: "", tall: false },
-  6: { span: "md:col-span-2 lg:col-span-12", horizontal: true, coverWidth: "lg:w-2/5", tall: false },
+  6: { span: "md:col-span-2 lg:col-span-12", horizontal: true, coverWidth: "lg:w-3/5", tall: false },
 };
 
 export default function Projects() {
@@ -104,7 +104,7 @@ export default function Projects() {
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
           <div>
-            <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider mb-2">// selected work</p>
+            <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider mb-2">selected work</p>
             <h2 className="text-4xl font-extrabold text-slate-100 mb-3">Projects</h2>
             <p className="text-slate-400 mb-4 max-w-xl">Beberapa sistem yang pernah aku bangun, dari e-commerce sampai aplikasi kasir.</p>
             <div className="w-20 h-1.5 bg-blue-500 rounded-full"></div>

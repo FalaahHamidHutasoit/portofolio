@@ -35,7 +35,7 @@ export default function About() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header rata kiri, bukan template tengah */}
         <div className="mb-12 max-w-3xl">
-          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider mb-3">tentang saya</p>
+          <p className="font-mono text-xs sm:text-sm text-blue-400 tracking-wider mb-3">// tentang saya</p>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-100 leading-[1.05] tracking-tight mb-4">
             Developer yang suka
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
